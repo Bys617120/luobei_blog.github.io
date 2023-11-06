@@ -1,12 +1,14 @@
 <br>
 <div align="center">
-<img alt="Vivia Logo" src="./preview/logo.png" width="280px">
+<img alt="Vivia Logo" src="https://raw.githubusercontent.com/saicaca/resource/main/vivia-img/logo.png" width="280px">
 <br>
 <br>
 <strong>
-<a href="https://saicaca.github.io/vivia-preview/">Live Demo</a>
+<a href="https://saicaca.github.io/vivia-preview/">💻Live Demo</a>
 |
-<a href="https://github.com/saicaca/hexo-theme-vivia/blob/main/README.zh-CN.md">中文文档</a>
+<a href="https://github.com/saicaca/hexo-theme-vivia/blob/main/README.zh-CN.md">🌏中文</a>
+|
+<a href="https://github.com/saicaca/fuwari">✨Astro Version (NEW)</a>
 </strong>
 <br>
 <br>
@@ -21,37 +23,74 @@ A theme for <a href="https://hexo.io/">Hexo</a>, modified from <a href="https://
 </a>
 </div>
 
-## Preview
+# Preview
 
 **[💻Live Demo](https://saicaca.github.io/vivia-preview/)**
 
-![home](preview/home.png)
+![home](https://raw.githubusercontent.com/saicaca/resource/main/vivia-img/home.png)
 
-![home_dark](preview/home-dark.png)
+![home_dark](https://raw.githubusercontent.com/saicaca/resource/main/vivia-img/home-dark.png)
 
-## Install
+# Install
 
-1. Install the theme via npm.
+> [!NOTE]
+> All the following commands should be executed in the root directory of your Hexo blog
 
-   ```bash
-   npm install hexo-theme-vivia
-   ```
-   
-2. Copy the configuration file `node_modules/hexo-theme-vivia/example_config.vivia.yml` to the root directory of the Hexo blog and rename it as `_config.vivia.yml`.
+### 1. Install the Theme
 
-3. Edit Hexo config file `_config.yml` and set `vivia` as the theme.
+Via npm (Recommended)
 
-   ```yaml
-   theme: vivia
-   ```
+```bash
+npm install hexo-theme-vivia
+```
 
-4. Create the `about` page
+Via Git
 
-   ```bash
-   hexo new page about
-   ```
+```bash
+# Clone the theme into the /themes/vivia directory
+git clone https://github.com/saicaca/hexo-theme-vivia.git themes/vivia
+  
+# Install the required dependencies
+npm install colorjs.io stylus hexo-symbols-count-time
+```
 
-## To-do list
+### 2. Create the Theme Configuration File
+
+Copy the example configuration file to your Hexo blog's root directory:
+
+- If you installed the theme via npm, the file is located at `node_modules/hexo-theme-vivia/example_config.vivia.yml`.
+- If you installed via Git, the file is in `themes/vivia/example_config.vivia.yml`.
+
+After copying, rename this file to `_config.vivia.yml`.
+
+### 3. Customize the Theme
+
+Edit `_config.vivia.yml` and make any desired customizations.
+
+### 4. Set `vivia` as the Theme
+
+```bash
+hexo config theme vivia
+```
+
+### 5. Create the `about` Page
+
+```bash
+hexo new page about
+```
+
+### 6. Disable the Pagination of Archive Page
+
+Edit `_config.yml` and add the following lines:
+
+```yaml
+archive_generator:
+  per_page: 0
+```
+
+Without this configuration, the archive page will only show up to ten articles at most.
+
+# To-do list
 
 - [x] Light / dark mode
 - [x] Custom theme color
@@ -59,12 +98,19 @@ A theme for <a href="https://hexo.io/">Hexo</a>, modified from <a href="https://
 - [x] Responsive design
 - [x] Comments
   - [x] Valine
+  - [x] Twikoo
   - [ ] Others
 - [ ] Search
 - [ ] TOC widget
-- [ ] Improve the styles of post contents
 
-## Thanks
+# Thanks
+
 <a href="https://jb.gg/OpenSourceSupport">
    <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo." width="200px" height="200px">
 </a>
+
+- [Hexo](https://hexo.io/zh-cn/index.html)
+- [Landscape](https://github.com/hexojs/hexo-theme-landscape)
+- [Color.js](https://colorjs.io/)
+- [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+- [Material Icons / Material Symbols](https://github.com/google/material-design-icons)
