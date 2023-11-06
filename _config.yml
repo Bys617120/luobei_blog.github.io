@@ -1,0 +1,56 @@
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+rss: /atom.xml
+home:
+  style: default
+favicon: null
+banner:
+  enable: false
+  url: /assets/banner.png
+  position: center
+  onAllPages: true
+hue: 270
+sidebar:
+  widgets:
+    normal:
+      - profile
+    sticky:
+      - category
+      - tag
+      - archive
+      - recent_posts
+archive_type: monthly
+recent_posts_limits: 5
+categories:
+  max_depth: null
+avatar: null
+author: Your Name
+subtitle: This is the subtitle
+links:
+  - name: Twitter
+    icon: fa-brands fa-twitter
+    url: https://twitter.com
+  - name: Steam
+    icon: fa-brands fa-steam
+    url: https://store.steampowered.com
+  - name: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com
+comment:
+  valine:
+    enable: false
+    appId: null
+    appKey: null
+    placeholder: Just go go
+    pageSize: 10
+    highlight: true
+    serverURLs: null
+gauges_analytics: false
+google_analytics: false
+baidu_analytics: false
+copyright: null
+theme: vivia
+archive_generator:
+  per_page: 0
